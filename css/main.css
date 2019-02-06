@@ -2,7 +2,7 @@
 
 html {
 	box-sizing: border-box;
-	background-color: #5f45bb;
+	/* background-color: #5f45bb; */
 	background-image: linear-gradient(to bottom right, #180cac, #d054e4);
 	color: #fff;
 	font-family: "Quicksand", sans-serif;
@@ -13,8 +13,20 @@ html {
 	min-height: 100vh;
 	min-width: 300px;
 	overflow-x: hidden;
-	text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
+
+body {
+  background-color: #222;
+  overflow: hidden;
+  background-color: #1e88e5;/*#76BCAD;*/
+}
+
+canvas {  
+   position: absolute;
+  width:100%;
+}
+
 
 a {
 	color: currentColor;
@@ -65,6 +77,31 @@ ul {
 	position: absolute;
 }
 
+.picture-image {
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+	/* color: #9013fe; */
+	color: black;
+	display: inline-block;
+	font-size: 0.875rem;
+	line-height: 1;
+	text-shadow: none;
+	transition-property: box-shadow, transform;
+	user-select: none;
+	vertical-align: top;
+	white-space: nowrap;
+	will-change: box-shadow, transform;
+}
+
+.picture-image:hover {
+	box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+	transform: scale(1.02) translateY(-4px);
+}
+
+.button:active {
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+	transform: scale(0.98) translateY(-2px);
+}
+
 /*  Specific */
 
 .social {
@@ -105,7 +142,8 @@ ul {
 	background-color: #fff;
 	border-radius: 290486px;
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-	color: #9013fe;
+	/* color: #9013fe; */
+	color: black;
 	display: inline-block;
 	font-size: 0.875rem;
 	line-height: 1;
@@ -135,7 +173,8 @@ ul {
 }
 
 .job {
-	color: #ffe479;
+	/* color: #ffe479; */
+	color: white;
 	font-size: 0.75rem;
 }
 
@@ -144,7 +183,8 @@ ul {
 }
 
 .hr {
-	background-color: #ff470f;
+	/* background-color: #ff470f; */
+	background: white;
 	border: none;
 	content: "";
 	height: 1px;
