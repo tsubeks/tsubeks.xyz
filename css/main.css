@@ -10,21 +10,28 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.5;
-	min-height: 100vh;
+
+	min-height: 100%;
 	min-width: 300px;
+	/* max-height: 100%; */
+	/* height: 100vh; */
+	margin: 0;
+
 	overflow-x: hidden;
 	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  background-color: #222;
-  overflow: hidden;
-  background-color: #1e88e5;/*#76BCAD;*/
+	background-color: #222;
+	overflow: hidden;
+	background-color: #1e88e5;/*#76BCAD;*/
+	max-height: 100%;
 }
 
 canvas {  
-   position: absolute;
-  width:100%;
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
 }
 
 

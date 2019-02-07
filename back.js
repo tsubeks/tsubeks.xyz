@@ -2,10 +2,13 @@ const canvas = document.getElementById("wall");
 console.log(canvas);
 const ctx = canvas.getContext("2d");
 const colors = ['#f44336', '#fdd835','#1e88e5' ];//["#FA2E59", "#FF703F", "#F7BC05", "#76BCAD"];
+// let ch = (canvas.height = window.innerHeight),
+//   cy = ch / 2;
 let cw = (canvas.width = window.innerWidth),
   cx = cw / 2;
-let ch = (canvas.height = window.innerHeight),
+let ch = (canvas.height = document.getElementsByTagName('body')[0].scrollHeight),
   cy = ch / 2;
+
 ctx.lineCap = "round";
 const rad = Math.PI / 180;
 let frames = 0;
@@ -122,6 +125,11 @@ waves.push(new Wave(colors[0]));
 let cnt = 0;
 
 function Frame() {
+
+cw = (canvas.width = window.innerWidth),
+  cx = cw / 2;
+ch = (canvas.height = document.getElementsByTagName('body')[0].scrollHeight),
+  cy = ch / 2;
   requestId = window.requestAnimationFrame(Frame);
   ctx.clearRect(0, 0, cw, ch);
   let moment = new Date().getTime() / 30;
