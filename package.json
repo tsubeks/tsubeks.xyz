@@ -9,10 +9,6 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "rebass": "^3.1.2",
-    "styled-components": "^4.3.2",
-    "styled-normalize": "^8.0.6",
-    "styled-system": "^5.0.16",
     "theme-ui": "^0.2.21"
   },
   "scripts": {
@@ -27,11 +23,7 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -39,6 +31,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "repng": "^3.2.0"
   }
 }
