@@ -6,10 +6,22 @@
   "dependencies": {
     "@emotion/core": "^10.0.14",
     "@mdx-js/react": "^1.0.27",
+    "@types/jest": "^24.0.17",
+    "@types/node": "^12.7.1",
+    "@types/react": "^16.9.1",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-helmet": "^5.0.9",
+    "@types/react-icons": "^3.0.0",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/theme-ui": "^0.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "theme-ui": "^0.2.21"
+    "theme-ui": "^0.2.21",
+    "typescript": "^3.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,7 +35,11 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
