@@ -80,7 +80,12 @@ function Layout({ children, ...props }: { children: React.ReactNode }) {
               minWidth: 40,
               height: 40,
               border: "null",
-              borderRadius: 99999
+              borderRadius: 99999,
+              ":focus, :active": {
+                color: "text",
+                boxShadow: "0px 0px 0px 2px",
+                outline: "none"
+              }
             }}
           />
         </Container>

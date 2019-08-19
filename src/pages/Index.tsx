@@ -13,8 +13,12 @@ function Link(props: any) {
       sx={{
         fontSize: 3,
         mx: 3,
+        outline: "none",
         color: "text",
         ":hover": {
+          color: "primary"
+        },
+        ":focus": {
           color: "primary"
         }
       }}

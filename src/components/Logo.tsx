@@ -14,7 +14,11 @@ const Logo = ({
     {...props}
     to={to}
     sx={{
-      textDecoration: "none"
+      textDecoration: "none",
+      outline: "none",
+      ":focus": {
+        outline: t => `2px solid ${t.colors.primary}`
+      }
     }}
   >
     <div
