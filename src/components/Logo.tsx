@@ -20,35 +20,23 @@ const Logo = ({
     <div
       sx={{
         display: "flex",
-        minWidth: "64px",
-        minHeight: "64px",
-        bg: "transparent",
+        width: "40px",
+        height: "40px",
+        fontSize: "54px",
+        color: "transparent",
+        textShadow: `0 0 0 white`,
+        bg: "text",
         justifyContent: "center",
-        alignItems: "center",
-        overflow: "hidden"
+        alignItems: "center"
       }}
     >
-      <div
-        sx={{
-          display: "flex",
-          width: "40px",
-          height: "40px",
-          fontSize: "54px",
-          color: "transparent",
-          textShadow: `0 0 0 white`,
-          bg: "text",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-      >
-        {/* <span */}
-        {/*   sx={{ maxHeight: "64px", color: "text" }} */}
-        {/*   role="img" */}
-        {/*   aria-label="logo" */}
-        {/* > */}
-        {/*   {children} */}
-        {/* </span> */}
-      </div>
+      {/* <span */}
+      {/*   sx={{ maxHeight: "64px", color: "text" }} */}
+      {/*   role="img" */}
+      {/*   aria-label="logo" */}
+      {/* > */}
+      {/*   {children} */}
+      {/* </span> */}
     </div>
   </Link>
 );

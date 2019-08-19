@@ -29,7 +29,8 @@ const Root = () => {
             },
             body: {
               margin: 0,
-              fontSize: "10px"
+              fontSize: "10px",
+              fontFamily: "monospace"
             }
           })}
         />

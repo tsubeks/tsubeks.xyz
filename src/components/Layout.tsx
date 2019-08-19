@@ -66,33 +66,23 @@ function Layout({ children, ...props }: { children: React.ReactNode }) {
           >
             {/* <NavLink to="/now">now</NavLink> */}
             {/* <NavLink to="/feed">feed</NavLink> */}
-            <NavLink to="/now">NOW</NavLink>
-            <NavLink to="/book">BOOK</NavLink>
-            <NavLink to="/resume">CV</NavLink>
+            {/* <NavLink to="/now">NOW</NavLink> */}
+            {/* <NavLink to="/book">BOOK</NavLink> */}
+            {/* <NavLink to="/resume">CV</NavLink> */}
           </div>
-          <div
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              minWidth: 64,
-              height: 64
+          <Button
+            onClick={() => {
+              const index = modes.indexOf(mode);
+              const next = modes[(index + 1) % modes.length];
+              setMode(next);
             }}
-          >
-            <Button
-              onClick={() => {
-                const index = modes.indexOf(mode);
-                const next = modes[(index + 1) % modes.length];
-                setMode(next);
-              }}
-              sx={{
-                minWidth: 40,
-                height: 40,
-                border: "null",
-                borderRadius: 99999
-              }}
-            />
-          </div>
+            sx={{
+              minWidth: 40,
+              height: 40,
+              border: "null",
+              borderRadius: 99999
+            }}
+          />
         </Container>
       </Header>
       <Main>

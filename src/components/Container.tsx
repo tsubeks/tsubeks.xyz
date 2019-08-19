@@ -7,9 +7,10 @@ const Container = ({ children, ...props }: { children: React.ReactNode }) => (
     sx={{
       display: "flex",
       flex: "1 1 auto",
-      px: 2,
-      py: 2,
+      p: 4,
+      mx: "auto",
       flexDirection: "column",
+      maxWidth: "wide",
       justifyContent: "center",
       alignItems: "center"
     }}
