@@ -11,7 +11,7 @@ function Link(props: any) {
     <a
       {...props}
       sx={{
-        fontSize: 4,
+        fontSize: 3,
         mx: 3,
         color: "text",
         ":hover": {
@@ -38,8 +38,10 @@ const Index = () => {
           bg: "text"
         }}
       />
-      <h2 sx={{ m: 0, fontSize: 4, color: "text" }}>
-        Front-end developer. Focus on design systems,
+      <h2 sx={{ m: 0, fontSize: 3, color: "text" }}>
+        Front-end developer.
+        <br />
+        Focus on design systems,
         <br /> solving buisness problems, and .
       </h2>
       <br />
