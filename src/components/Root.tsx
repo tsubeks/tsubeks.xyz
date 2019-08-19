@@ -1,11 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { ThemeProvider } from "theme-ui";
+import { ThemeProvider, useColorMode } from "theme-ui";
 import { Global } from "@emotion/core";
 
+import theme from "../theme.js";
 import Layout from "./Layout";
-import theme from "./theme";
+import Index from "../pages/Index";
+import Book from "../pages/Book";
 
 const meta = {
   title: "Bogdan Tsubeks",
@@ -13,31 +15,23 @@ const meta = {
   creator: "Bogdan Tsubeks"
 };
 
-const Index = () => {
-  return <h2>Home</h2>;
-};
-
-const About = () => {
-  return <h2>About</h2>;
-};
-
-const Book = () => {
-  return <h2>Book</h2>;
-};
-
 const Root = () => {
   return (
-    <Router>
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <Router>
         <Global
-          styles={{
+          styles={theme => ({
             "*": {
               boxSizing: "border-box"
             },
+            html: {
+              background: theme.colors.background
+            },
             body: {
-              margin: 0
+              margin: 0,
+              fontSize: "10px"
             }
-          }}
+          })}
         />
         <Helmet>
           <meta name="twitter:site" content="@purenoxyz" />
@@ -52,11 +46,10 @@ const Root = () => {
         </Helmet>
         <Layout>
           <Route path="/" exact component={Index} />
-          <Route path="/about/" component={About} />
           <Route path="/book/" component={Book} />
         </Layout>
-      </ThemeProvider>
-    </Router>
+      </Router>
+    </ThemeProvider>
   );
 };
 
