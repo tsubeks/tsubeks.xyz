@@ -16,8 +16,8 @@ const Logo = ({
     sx={{
       textDecoration: "none",
       outline: "none",
-      ":focus": {
-        outline: t => `2px solid ${t.colors.primary}`
+      ":hover, :focus": {
+        outline: t => `2px solid ${t.colors.text}`
       }
     }}
   >

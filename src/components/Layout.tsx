@@ -40,7 +40,7 @@ function useInterval(callback: Function, delay: number) {
 
 function Layout({ children, ...props }: { children: React.ReactNode }) {
   const [mode, setMode] = useColorMode();
-  const [delay, setDelay] = useState(1);
+  const [delay] = useState(1);
   const [time, setTime] = useState(0);
 
   useInterval(() => setTime(new Date().getTime()), delay);
@@ -68,7 +68,7 @@ function Layout({ children, ...props }: { children: React.ReactNode }) {
             {/* <NavLink to="/feed">feed</NavLink> */}
             {/* <NavLink to="/now">NOW</NavLink> */}
             {/* <NavLink to="/book">BOOK</NavLink> */}
-            {/* <NavLink to="/resume">CV</NavLink> */}
+            <NavLink to="/resume">CV</NavLink>
           </div>
           <Button
             onClick={() => {
@@ -81,8 +81,8 @@ function Layout({ children, ...props }: { children: React.ReactNode }) {
               height: 40,
               border: "null",
               borderRadius: 99999,
-              ":focus, :active": {
-                color: "text",
+              ":hover, :focus ": {
+                color: "primary",
                 boxShadow: "0px 0px 0px 2px",
                 outline: "none"
               }

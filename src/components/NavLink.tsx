@@ -17,7 +17,6 @@ const Link = ({
     activeClassName="active"
     sx={{
       display: "inline-block",
-      font: "400 11px system-ui",
       appearance: "none",
       textAlign: "center",
       lineHeight: "inherit",
@@ -35,8 +34,8 @@ const Link = ({
         bg: "primary",
         color: "background"
       },
-      ":focus": {
-        outline: "solid 2px"
+      ":hover, :focus": {
+        outline: t => `solid 2px ${t.colors.primary}`
       }
     }}
   >

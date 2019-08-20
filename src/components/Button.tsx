@@ -21,6 +21,7 @@ const Button = ({
       textDecoration: "none",
       fontSize: "inherit",
       fontWeight: "bold",
+      outline: 0,
       m: 0,
       px: 3,
       py: 2,
@@ -28,7 +29,7 @@ const Button = ({
       borderRadius: 0,
       variant: `buttons.${variant}`,
       ":focus": {
-        outline: "solid 2px"
+        outline: t => `2px solid ${t.colors.secondary}`
       }
     }}
   >

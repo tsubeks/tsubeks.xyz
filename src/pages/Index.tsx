@@ -6,15 +6,24 @@ import {
   FaTelegram as Telegram
 } from "react-icons/fa";
 
-function Link(props: any) {
+function Link({
+  children,
+  href,
+  ...props
+}: {
+  children: React.ReactNode;
+  href: string;
+}) {
   return (
     <a
       {...props}
+      href={href}
       sx={{
         fontSize: 3,
         mx: 3,
-        outline: "none",
+        outline: 0,
         color: "text",
+        cursor: "pointer",
         ":hover": {
           color: "primary"
         },
@@ -24,7 +33,9 @@ function Link(props: any) {
       }}
       target="_blank"
       rel="noopener noreferrer"
-    />
+    >
+      {children}
+    </a>
   );
 }
 

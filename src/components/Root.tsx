@@ -1,13 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { ThemeProvider, useColorMode } from "theme-ui";
+import { ThemeProvider } from "theme-ui";
 import { Global } from "@emotion/core";
 
 import theme from "../theme.js";
 import Layout from "./Layout";
 import Index from "../pages/Index";
 import Book from "../pages/Book";
+import CV from "../pages/CV";
 
 const meta = {
   title: "Bogdan Tsubeks",
@@ -48,6 +49,7 @@ const Root = () => {
         <Layout>
           <Route path="/" exact component={Index} />
           <Route path="/book/" component={Book} />
+          <Route path="/cv/" component={CV} />
         </Layout>
       </Router>
     </ThemeProvider>
