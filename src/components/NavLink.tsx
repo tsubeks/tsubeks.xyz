@@ -28,14 +28,14 @@ const Link = ({
       py: 2,
       border: 0,
       borderRadius: 0,
-      color: "primary",
+      color: "text",
       bg: "background",
       "&.active": {
-        bg: "primary",
+        bg: "text",
         color: "background"
       },
       ":hover, :focus": {
-        outline: t => `solid 2px ${t.colors.primary}`
+        outline: t => `solid 2px ${t.colors.text}`
       }
     }}
   >
