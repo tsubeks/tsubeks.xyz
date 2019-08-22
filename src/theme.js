@@ -96,7 +96,8 @@ export default {
       fontWeight: "heading",
       lineHeight: "heading",
       mt: 4,
-      mb: 3
+      mb: 3,
+      color: "text"
     },
     small: {
       fontWeight: "bold",
@@ -163,9 +164,10 @@ export default {
     },
     hr: {
       border: 0,
-      my: 4,
-      borderBottom: "1px solid",
-      borderColor: "muted"
+      width: "100%",
+      height: 4,
+      my: 2,
+      bg: "text"
     },
     table: {
       width: "100%",

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui";
+import { Styled, jsx } from "theme-ui";
 import {
   FaGithub as Github,
   FaEnvelope as Mail,
@@ -42,21 +42,21 @@ function Link({
 const Index = () => {
   return (
     <div sx={{ maxWidth: "container", alignSelf: "flex-start" }}>
-      <h1 sx={{ fontFamily: "", m: 0, fontSize: 8, color: "text" }}>
+      <h1
+        sx={{
+          fontFamily: "",
+          m: 0,
+          fontSize: 8,
+          color: "text"
+        }}
+      >
         Bogdan Tsubeks
       </h1>
-      <hr
-        sx={{
-          border: 0,
-          height: 4,
-          my: 2,
-          bg: "text"
-        }}
-      />
+      <Styled.hr />
       <h2 sx={{ m: 0, fontSize: 3, color: "text" }}>
         Front-end developer.
         <br />
-        Focus on design systems,
+        Focuses on design systems,
         <br /> solving buisness problems, and .
       </h2>
       <br />
@@ -67,7 +67,7 @@ const Index = () => {
       <Link href="mailto:bogdan@tsubeks.com">
         <Mail />
       </Link>
-      <Link href="http://t.me/tsubeks">
+      <Link href="https://t.me/tsubeks">
         <Telegram />
       </Link>
     </div>

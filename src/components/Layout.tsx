@@ -68,7 +68,7 @@ function Layout({ children, ...props }: { children: React.ReactNode }) {
             {/* <NavLink to="/feed">feed</NavLink> */}
             {/* <NavLink to="/now">NOW</NavLink> */}
             {/* <NavLink to="/book">BOOK</NavLink> */}
-            <NavLink to="/resume">CV</NavLink>
+            <NavLink to="/cv">CV</NavLink>
           </div>
           <Button
             onClick={() => {
