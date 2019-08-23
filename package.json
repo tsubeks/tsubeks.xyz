@@ -22,7 +22,7 @@
     "react-icons": "^3.7.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "theme-ui": "^0.2.33",
+    "theme-ui": "^0.2.36",
     "typescript": "^3.5.3"
   },
   "scripts": {

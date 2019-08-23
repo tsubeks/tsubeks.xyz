@@ -3,12 +3,19 @@ import { Styled, jsx } from "theme-ui";
 
 function CV() {
   return (
-    <div sx={{ display: "flex", width: "100%", justifyContent: "center" }}>
+    <div
+      sx={{
+        display: "flex",
+        width: "100%",
+        justifyContent: "center",
+        flexWrap: "wrap"
+      }}
+    >
       <div
         sx={{
-          maxWidth: "40%",
           display: "flex",
-          flex: "1 1 auto",
+          flex: "1",
+          mr: [null, 4, 4],
           flexDirection: "column"
         }}
       >
@@ -18,7 +25,9 @@ function CV() {
           <span
             sx={{
               color: "transparent",
-              textShadow: t => `0 0 0 ${t.colors.text}`,
+              "&": {
+                textShadow: t => `0 0 0 ${t.colors.text}`
+              },
               bg: "background"
             }}
           >
@@ -72,12 +81,10 @@ function CV() {
           and design systems, JavaScript, React, WebRTC, GraphQL and REST
         </Styled.h4>
       </div>
-      <div sx={{ m: 4 }} />
       <div
         sx={{
-          maxWidth: "40%",
           display: "flex",
-          flex: "1 1 auto",
+          flex: 1,
           flexDirection: "column"
         }}
       >
