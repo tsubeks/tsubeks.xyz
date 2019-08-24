@@ -23,6 +23,8 @@ function CV() {
         <Styled.hr />
         <Styled.h4>
           <span
+            role="img"
+            aria-label="Hi"
             sx={{
               color: "transparent",
               "&": {
