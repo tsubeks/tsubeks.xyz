@@ -16,7 +16,7 @@ const meta = {
   creator: "Bogdan Tsubeks"
 };
 
-const Root = () => {
+function Root() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
@@ -54,6 +54,6 @@ const Root = () => {
       </Router>
     </ThemeProvider>
   );
-};
+}
 
 export default Root;

@@ -39,7 +39,7 @@ function Link({
   );
 }
 
-const Index = () => {
+function Index() {
   return (
     <div sx={{ maxWidth: "container", alignSelf: "flex-start" }}>
       <h1
@@ -72,6 +72,6 @@ const Index = () => {
       </Link>
     </div>
   );
-};
+}
 
 export default Index;
