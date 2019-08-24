@@ -36,7 +36,6 @@ function Root() {
           })}
         />
         <Helmet>
-          <meta name="twitter:site" content="@purenoxyz" />
           <meta name="og:image" content="" />
           <title>{meta.title}</title>
           <meta name="og:title" content={meta.title} />

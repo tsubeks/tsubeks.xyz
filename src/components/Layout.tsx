@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { useEffect, useState, useRef } from "react";
-import { jsx, useColorMode } from "theme-ui";
+import { jsx, useColorMode, useThemeUI } from "theme-ui";
+import { Helmet } from "react-helmet";
 // import {
 //   FaGithub as Github,
 //   FaBookDead as Book,
@@ -42,6 +43,7 @@ function Layout({ children, ...props }: { children: React.ReactNode }) {
   const [mode, setMode] = useColorMode();
   const [delay] = useState(1);
   const [time, setTime] = useState(0);
+  const { theme } = useThemeUI();
 
   useInterval(() => setTime(new Date().getTime()), delay);
 
@@ -55,6 +57,9 @@ function Layout({ children, ...props }: { children: React.ReactNode }) {
         bg: "primary"
       }}
     >
+      <Helmet>
+        <meta name="theme-color" content={theme.colors.background} />
+      </Helmet>
       <Header>
         <Container sx={{ flexDirection: "row" }}>
           <Logo>X</Logo>
