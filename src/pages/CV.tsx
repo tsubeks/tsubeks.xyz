@@ -10,6 +10,7 @@ function CV() {
         justifyContent: "center",
         flexWrap: "wrap"
       }}
+      id="capture"
     >
       <div
         sx={{
@@ -36,13 +37,34 @@ function CV() {
             🖖
           </span>{" "}
           Hi, my name is Bogdan Tsubeks, and I'm front-end developer who loves
-          creating products that are beautiful and have great performance.
-          Genrally I like scratching my own itch and create software that solves
-          peoples problems. <br />
+          creating products that look perfect and have great performance.
+          Generally I like scratching my own itch and create software that
+          solves peoples problems. <br />
           <br />
-          I've started programming when I was 13. In 2014 finished 2 years
-          program of Bachelor of Computer Science and since then worked a lot
-          with React.js stack.
+          I've started programming when I was 13 my first language was Pascal,
+          also I learned C, C++, C#, PHP, HTML/CSS, my first big project I've
+          created when I was 14 in 2011. It was{" "}
+          <Styled.a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://web.archive.org/web/20111113223701/http://prigorod-taganroga.ru/"
+          >
+            site
+          </Styled.a>{" "}
+          for real estate company in Taganrog. In 2014 finished 2 years program
+          of Bachelor of Computer Science and since then worked a lot with
+          React.js stack.
+          <br />
+          <br />
+          Love beautiful{" "}
+          <Styled.a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.reddit.com/r/unixporn/"
+          >
+            design
+          </Styled.a>
+          , math and philosophy.
         </Styled.h4>
         <Styled.h3>Contact</Styled.h3>
         <Styled.hr />
@@ -102,52 +124,62 @@ function CV() {
         <Styled.hr />
         <Styled.h4>
           Currently I actively learning English, C, network programming and also
-          looking for new opportunities. Live in Russia, Rostov-on-Don.
+          looking for new opportunities. Live in Russia, Taganrog.
         </Styled.h4>
-        <Styled.hr />
         <Styled.h3>Shping (2017-2019)</Styled.h3>
-        Was working at
-        <Styled.a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.shping.com"
-        >
-          Shping
-        </Styled.a>
-        on front-end lead position with a team of 3 people. Shping is a shopping
-        app. React + Redux + Redux Saga
         <Styled.hr />
+        <Styled.h4>
+          Was working at{" "}
+          <Styled.a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.shping.com"
+          >
+            Shping
+          </Styled.a>{" "}
+          on front-end lead position with a team of 3 people. Shping is a
+          shopping app. Stack on this project is React + Redux + Sagas.
+        </Styled.h4>
         <Styled.h3>Nedvex (2016-2017)</Styled.h3>
-        Worked as a front-end lead at
-        <Styled.a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://nedvex.ru"
-        >
-          Nedvex
-        </Styled.a>
-        . Nedvex is close platform for realtors from Sochi.
         <Styled.hr />
+        <Styled.h4>
+          Worked as a front-end lead at{" "}
+          <Styled.a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://nedvex.ru"
+          >
+            Nedvex
+          </Styled.a>
+          . This is closed platform for realtors from Sochi. I used React +
+          Redux + Canvas to create this site.
+        </Styled.h4>
         <Styled.h3>Intspirit (2015-2016)</Styled.h3>
-        Main project was I was rewriting
-        <Styled.a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://lawcus.com"
-        >
-          Lawcus
-        </Styled.a>
-        from Angular 1.x to React.js
         <Styled.hr />
+        <Styled.h4>
+          Main project that I worked in Intspirit (outsoursing) was rewriting{" "}
+          <Styled.a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://lawcus.com"
+          >
+            Lawcus
+          </Styled.a>{" "}
+          from Angular 1.x to React.js
+        </Styled.h4>
         <Styled.h3>YouRockDude (2014-2015)</Styled.h3>
-        <Styled.a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://yourockdude.com"
-        >
-          YouRockDude
-        </Styled.a>
         <Styled.hr />
+        <Styled.h4>
+          Here in{" "}
+          <Styled.a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://yourockdude.com"
+          >
+            YouRockDude
+          </Styled.a>{" "}
+          I've created lot's of app based on WordPress.
+        </Styled.h4>
       </div>
     </div>
   );

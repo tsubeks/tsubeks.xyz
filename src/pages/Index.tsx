@@ -57,7 +57,7 @@ function Index() {
         Front-end developer.
         <br />
         Focuses on design systems,
-        <br /> solving buisness problems, and .
+        <br /> solving business problems, and ∎
       </h2>
       <br />
       <br />
