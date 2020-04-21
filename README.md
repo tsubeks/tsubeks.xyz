@@ -1,4 +1,4 @@
 ## Available Scripts
 
-### yarn start
+### npm start
 
